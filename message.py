@@ -82,4 +82,3 @@ class messageEd:
         self.result.set("")
 
 
-messageEd()
