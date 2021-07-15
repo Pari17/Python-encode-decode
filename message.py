@@ -47,7 +47,7 @@ class messageEd:
         self.window.mainloop()
         
     def encoder(self, key, message):
-        self.encode_list = []
+        encode_list = []
         for i in range(len(message)):
             key_c = key[i % len(key)]
             self.encode_list.append(chr((ord(message[i]) + ord(key_c)) % 256))
