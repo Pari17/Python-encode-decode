@@ -58,8 +58,8 @@ class messageEd:
         message = base64.urlsafe_b64decode(message).decode()
         for i in range(len(message)):
             key_c = key[i % len(key)]
-            self.decode_list.append(chr((256 + ord(message[i]) - ord(key_c)) % 256))
-        return "".join(self.decode_list)
+            decode_list.append(chr((256 + ord(message[i]) - ord(key_c)) % 256))
+        return "".join(decode_list)
 
     # to set mode as either encode or decode based on user input
     def user_choice(self, input_type):
