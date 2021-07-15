@@ -50,8 +50,8 @@ class messageEd:
         encode_list = []
         for i in range(len(message)):
             key_c = key[i % len(key)]
-            self.encode_list.append(chr((ord(message[i]) + ord(key_c)) % 256))
-        return base64.urlsafe_b64encode("".join(self.encode_list).encode()).decode()
+            encode_list.append(chr((ord(message[i]) + ord(key_c)) % 256))
+        return base64.urlsafe_b64encode("".join(encode_list).encode()).decode()
 
     def decoder(self, key, message):
         self.decode_list = []
