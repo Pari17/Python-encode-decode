@@ -54,7 +54,7 @@ class messageEd:
         return base64.urlsafe_b64encode("".join(encode_list).encode()).decode()
 
     def decoder(self, key, message):
-        self.decode_list = []
+        decode_list = []
         message = base64.urlsafe_b64decode(message).decode()
         for i in range(len(message)):
             key_c = key[i % len(key)]
