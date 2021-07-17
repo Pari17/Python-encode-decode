@@ -6,7 +6,6 @@ import sys
 class messageEd:
     
     def __init__(self):
-        
         # initialising
         self.window = Tk()
         self.window.geometry('500x300')
