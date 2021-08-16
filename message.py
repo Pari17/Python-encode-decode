@@ -2,7 +2,6 @@ from tkinter import *
 import base64
 import sys
 
-
 class messageEd:
     
     def __init__(self):
